@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5ain's Website</title>  
+    <!-- Adiciona Font Awesome CSS/Ícones vetor -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <style>
+        /* Cor de fundo, fonte, tamanho e etc */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #222;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Classe dos botões */
+        .buttons {
+            margin-top: 20px;
+        }
+
+        /* Cor de fundo, fonte, tamanho e etc */
+        a.button {
+            background-color: #555;
+            color: #fff;
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        
+        /* Container de onde o texto e foto de perfil vai ficar */
+        .container {
+            text-align: center;
+            background-color: #111;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+        }
+
+        h1 {
+            color: #fff; /* Container text color */
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .portfolio-images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .portfolio-images img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="buttons">
+        <a class="button" href="{{url_for('index')}}">Home</a>
+        <a class="button" href="{{url_for('about')}}">About Me</a>
+        <a class="button" href="#">Portfolio</a>
+    </div>
+    <div class="container">
+        <h1>My Portfolio</h1>
+        <div class="portfolio-images">
+            <img src="https://res.cloudinary.com/dls4smeus/image/upload/v1695223345/z2lsyocjgzwrhdutp6fe.png" alt="Project 1">
+            <img src="https://res.cloudinary.com/dls4smeus/image/upload/v1695223345/ujy1ifrfmwa1x3etetbo.png" alt="Project 2">
+            <img src="https://res.cloudinary.com/dls4smeus/image/upload/v1695223345/wy8lhg48ulm77kzyidvq.png" alt="Project 3">
+            <!-- Add more images as needed -->
+        </div>
+    </div>
+</body>
+</html>

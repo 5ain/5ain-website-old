@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5ain's Website</title>  
+    <!-- Adiciona Font Awesome CSS/Ícones vetor -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <style>
+        /* Cor de fundo, fonte, tamanho e etc */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #222;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Classe dos botões */
+        .buttons {
+            margin-top: 20px;
+        }
+
+        /* Cor de fundo, fonte, tamanho e etc */
+        a.button {
+            background-color: #555;
+            color: #fff;
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        
+        /* Container de onde o texto e foto de perfil vai ficar */
+        .container {
+            text-align: center;
+            background-color: #111;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+        }
+        
+        h1 {
+            color: #fff;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #ccc;
+            font-size: 18px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="buttons">
+        <a class="button" href="{{url_for('index')}}">Home</a>
+        <a class="button" href="#">About Me</a>
+        <a class="button" href="{{url_for('portfolio')}}">Portfolio</a>
+    </div>
+    <div class="container">
+        <h1>Since 2012!</h1>
+        <p>I started my journey when i was 6 years old, my first OS was Windows XP, and here i am!</p>
+        </a>
+    </div>
+</body>
+</html>
